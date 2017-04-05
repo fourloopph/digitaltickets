@@ -1,0 +1,57 @@
+<ion-scroll class="navigation-scroll" direction="x" has-bouncing="true" scrollbar-x="false" style="width: 100%;">
+    <button class="navigation-button animated {{backButtonNav}}" ng-click="backToDashboard()"><i class="icon icon ion-chevron-left"></i></button>
+    <div class="navigation animated fadeInDown">
+        <div class="nav-phone {{navAnim1}} nav1 animated {{navAnimMaster}}" ng-click="changeImage('phone1_id')">
+            <img class="nav-phone-image" src="{{navImage1}}">
+            <div class="nav-phone-details">
+                <p class="nav-phone-name">
+                    SAMSUNG GALAXY NOTE 3
+                </p>
+                <div class="nav-price" style="color: {{textColor1}}; border: 2px solid {{borderColor1}}; background-color: {{bgColor1}};">
+                    <span class="nav-dollar">$</span><span class="nav-value">80</span><span class="nav-per">/mth</span>
+                </div>
+                <p class="nav-phone-cost">Minimum Cost: $1,200</p>
+                <p class="nav-phone-term">Contract Term: 24 months</p>
+            </div>
+        </div>
+        <div class="nav-phone {{navAnim2}} nav2 animated {{navAnimMaster}}" ng-click="changeImage('phone2_id')">
+            <img class="nav-phone-image" src="{{navImage2}}">
+            <div class="nav-phone-details">
+                <p class="nav-phone-name">
+                    SAMSUNG GALAXY S4
+                </p>
+                <div class="nav-price" style="color: {{textColor2}}; border: 2px solid {{borderColor2}}; background-color: {{bgColor2}};">
+                    <span class="nav-dollar">$</span><span class="nav-value">78</span><span class="nav-per">/mth</span>
+                </div>
+                <p class="nav-phone-cost">Minimum Cost: $1,200</p>
+                <p class="nav-phone-term">Contract Term: 24 months</p>
+            </div>
+        </div>
+        <div class="nav-phone {{navAnim3}} nav3 animated {{navAnimMaster}}" ng-click="changeImage('phone3_id')">
+            <img class="nav-phone-image" src="{{navImage3}}">
+            <div class="nav-phone-details">
+                <p class="nav-phone-name">
+                    SAMSUNG GALAXY S5
+                </p>
+                <div class="nav-price" style="color: {{textColor3}}; border: 2px solid {{borderColor3}}; background-color: {{bgColor3}};">
+                    <span class="nav-dollar">$</span><span class="nav-value">45</span><span class="nav-per">/mth</span>
+                </div>
+                <p class="nav-phone-cost">Minimum Cost: $1,200</p>
+                <p class="nav-phone-term">Contract Term: 24 months</p>
+            </div>
+        </div>
+        <div class="nav-phone {{navAnim4}} nav4 animated {{navAnimMaster}}" ng-click="changeImage('phone4_id')">
+            <img class="nav-phone-image" src="{{navImage4}}">
+            <div class="nav-phone-details gearFit">
+                <p class="nav-phone-name">
+                    SAMSUNG GEAR FIT
+                </p>
+                <div class="nav-price" style="color: {{textColor4}}; border: 2px solid {{borderColor4}}; background-color: {{bgColor4}};">
+                    <span class="nav-dollar">$</span><span class="nav-value">99</span><span class="nav-per">/mth</span>
+                </div>
+                <p class="nav-phone-cost">Minimum Cost: $1,200</p>
+                <p class="nav-phone-term">Contract Term: 24 months</p>
+            </div>
+        </div>
+    </div>
+</ion-scroll>

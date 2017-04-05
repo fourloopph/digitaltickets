@@ -1,0 +1,1580 @@
+/* Empty. Add your own CSS if you like */
+
+
+/**dashboard title**/
+
+@font-face {
+    font-family: 'Gravur';
+    src: url('GravurCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url('Akkurat-Normal.ttf');
+}
+
+div.dashboardTitle {
+    background: rgba(0, 0, 0, 0);
+}
+
+p.dashboardTitle_1 {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 88px;
+    margin-top: 120px;
+    margin-left: 118px;
+}
+
+p.dashboardTitle_2 {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 88px;
+    margin-top: 68px;
+    margin-left: 118px;
+}
+
+p.dashboardTitle_3 {
+    font-family: 'Akkurat';
+    color: white;
+    margin-top: 48px;
+    margin-left: 118px;
+    font-size: 30px;
+}
+
+
+/**dashboard body**/
+
+ion-scroll.dashboard-scroll {
+    height: 1000px;
+}
+
+div.dash-swipe {
+    margin-left: 85px;
+    margin-top: -102px;
+}
+
+div.device {
+    height: 832px;
+    margin-right: 25px;
+}
+
+div.phoneImage {
+    background: #336cc2;
+    height: 431px;
+    width: 570px;
+}
+
+div.phoneDetails {
+    background: #3763ba;
+    height: 402px;
+    width: 570px;
+}
+
+img.phone {
+    display: block;
+    margin: auto;
+    position: relative;
+    margin-top: 220px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.phoneDetails {
+    padding-top: 45px;
+    padding-left: 42px;
+    padding-bottom: 45px;
+}
+
+p.phoneName {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+p.phoneDesc {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 21px;
+}
+
+div.phone {
+    background: #152582;
+    color: white;
+    display: inline-block;
+    margin-top: 65px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+span.dollar {
+    font-family: 'Gravur';
+    position: absolute;
+    font-size: 27px;
+    margin-top: -4px;
+}
+
+span.value {
+    font-family: 'Gravur';
+    font-size: 39px;
+    margin-left: 14px;
+}
+
+span.per {
+    font-family: 'Akkurat';
+    font-size: 21px;
+    margin-left: 6px;
+}
+
+p.phoneCost {
+    font-family: 'Akkurat';
+    color: white;
+    margin-top: 15px;
+}
+
+p.phoneTerm {
+    font-family: 'Akkurat';
+    color: white;
+    margin-top: -10px;
+}
+
+button.phoneButton {
+    float: right;
+    border: none;
+    height: 76px;
+    width: 76px;
+}
+
+button.phoneButton:hover {
+    background: gray;
+}
+
+i.icon {
+    font-size: 30px;
+}
+
+
+/**
+------Navigation-------
+---------Style---------
+**/
+
+ion-scroll.navigation-scroll {
+    background: white;
+    height: 260px;
+}
+
+button.navigation-button {
+    position: absolute;
+    background: #152582;
+    border: none;
+    float: left;
+    color: white;
+    height: 80px;
+    width: 100px;
+}
+
+div.navigation {
+    margin-top: -5px;
+    margin-left: 200px;
+}
+
+div.nav-phone {
+    height: 250px;
+    width: 450px;
+    float: left;
+    position: relative;
+    /**center vertically**/
+}
+
+img.nav-phone-image {
+    float: left;
+    position: absolute;
+    /**center vertically**/
+    top: 50%;
+    /**center vertically**/
+    transform: translateY(-50%);
+    /**center vertically**/
+}
+
+div.gearFit {
+    margin-left: 35px;
+}
+
+p.nav-phone-name {
+    font-family: 'Gravur';
+    font-size: 28px;
+    line-height: 25px;
+    /**text spacing**/
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+
+
+/*start nav buttons here*/
+
+div.nav-price {
+    /*background: #152582;*/
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 120px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+}
+
+span.nav-dollar {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+span.nav-value {
+    font-family: 'Gravur';
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+span.nav-per {
+    font-family: 'Akkurat';
+}
+
+
+/*end*/
+
+p.nav-phone-cost {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+p.nav-phone-term {
+    margin-top: -15px;
+    margin-left: 120px;
+}
+
+
+/**
+---------Tabs-------
+---------Style---------
+**/
+
+ion-view.tab {
+    margin-top: 259px;
+}
+
+.slider {
+    height: 100%;
+}
+
+div.contnr {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.slidingTabs ul li {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    margin: 0;
+    font-family: 'Gravur';
+    font-size: 37px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    position: relative;
+    border: none;
+    height: 86px;
+    padding: 20px 45px 20px 45px;
+}
+
+.slidingTabs ul li:nth-child(1) {
+    background-color: #3662bb;
+}
+
+.slidingTabs ul li:nth-child(2) {
+    background-color: #346cc1;
+}
+
+.slidingTabs ul li:nth-child(3) {
+    background-color: #3662bb;
+}
+
+.slidingTabs ul li:nth-child(4) {
+    background-color: #3662bb;
+}
+
+.slidingTabs ul li:nth-child(5) {
+    background-color: #3673cc;
+}
+
+.slidingTabs ul li:nth-child(6) {
+    background-color: #3b67c6;
+}
+
+.slidingTabs ul li:nth-child(7) {
+    background-color: #4156b1;
+}
+
+.slidingTabs ul li:nth-child(8) {
+    background-color: #346cc1;
+}
+
+.slidingTabs ul li:nth-child(9) {
+    background-color: #3763ba;
+}
+
+.slidingTabs ul li.tab-active {
+    color: #346cc1;
+    background-color: white;
+    height: 100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.slidingTabs .tab-indicator-wrapper {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transform: translateY(-2px);
+    position: absolute;
+}
+
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 1;
+        transform: scale(2.5);
+        -webkit-transform: scale(2.5);
+    }
+}
+
+
+/**
+---------FirstGlance-------
+---------Style---------
+**/
+
+div.firstglance {
+    position: absolute;
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 100px;
+    width: 85%;
+}
+
+div.firstglance-two {
+    margin-left: 200px;
+}
+
+img.firstglance-back {
+    position: absolute;
+}
+
+img.firstglance-front {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+img.firstglance-check {
+    position: absolute;
+    float: right;
+    margin-top: 680px;
+    margin-left: 560px;
+}
+
+
+div.firstglance-card {
+    position: absolute;
+    z-index: 99999;
+    margin-top: -170px;
+}
+
+a.firstglance-conditions {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 325px;
+    z-index: 99999;
+}
+
+p.firstglance-phone-name {
+    color: white;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+div.firstglance-two {
+    padding-left: 60px;
+    padding-right: 160px;
+}
+
+div.holder {
+    position: absolute;
+    margin-top: -342px;
+    margin-left: 30px;
+}
+
+
+/**rating star**/
+
+ul.rating > li > i.icon {
+    color: white;
+    margin-top: 25px;
+    font-size: 40px;
+    float: left;
+}
+
+p.firstglance-phone-review {
+    font-family: 'Akkurat';
+    margin-top: 85px;
+    color: white;
+    font-size: 22px;
+}
+
+p.firstglance-phone-description {
+    font-family: 'Akkurat';
+    margin-top: 40px;
+    color: white;
+    line-height: 35px;
+}
+
+div.firstglance-amount {
+    background: #152582;
+    margin-top: 90px;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    color: white;
+    width: 90%;
+    position: absolute;
+    z-index: 99999;
+    height: 155px;
+    width: 450px;
+}
+
+span.firstglance-dollar {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 40px;
+    margin-top: -6px;
+}
+
+span.firstglance-value {
+    font-family: 'Gravur';
+    font-size: 70px;
+    margin-left: 24px;
+}
+
+span.firstglance-per {
+    font-family: 'Akkurat';
+    font-size: 20px;
+}
+
+p.firstglance-minimum {
+    font-family: 'Akkurat';
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+p.firstglance-term {
+    font-family: 'Akkurat';
+    font-size: 20px;
+    margin-top: -8px;
+}
+
+button.firstglance-button-1 {
+    background: white;
+    border: none;
+    float: right;
+    margin-top: -66px;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+}
+
+div.firstglance-a {
+    background: #3673cc;
+    width: 90%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+p.firstglance-copy-1 {
+    font-family: 'Akkurat';
+    color: white;
+    margin-bottom: 30px;
+    font-size: 29px;
+    line-height: 32px;
+}
+
+div.firstglance-b {
+    background: #3673cc;
+    height: 378px;
+    width: 21%;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 104px;
+    position: absolute;
+    z-index: 99999;
+}
+
+p.firstglance-copy-2 {
+    font-family: 'Gravur';
+    color: white;
+    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+p.firstglance-copy-3 {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+button.firstglance-button-2 {
+    background: white;
+    border: none;
+    float: right;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+    margin-top: 24px;
+}
+
+
+/**
+---------Battery-------
+---------Style---------
+**/
+
+div.battery {
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 100px;
+    width: 85%;
+}
+
+div.battery-info {
+    padding-right: 120px;
+}
+
+div.battery-image {}
+
+p.battery-title {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 100px;
+    line-height: 80px;
+    margin-bottom: 34px;
+}
+
+p.battery-body-one {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+p.battery-body-two {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 335px;
+}
+
+a.battery-conditions {
+    font-family: 'Akkurat';
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/**
+---------Camera-------
+---------Style---------
+**/
+
+div.camera {
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 100px;
+    width: 85%;
+}
+
+div.camera-info {
+    padding-right: 120px;
+}
+
+div.camera-image {}
+
+p.camera-title {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 100px;
+    line-height: 80px;
+    margin-bottom: 34px;
+}
+
+p.camera-body-one {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+p.camera-body-two {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 415px;
+}
+
+a.camera-conditions {
+    font-family: 'Akkurat';
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/**
+---------Reviews-------
+---------Style---------
+**/
+
+div.reviews {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 85%;
+}
+
+p.reviews-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+div.reviews-cnet {
+    position: relative;
+    /**center vertically**/
+    margin-bottom: 70px;
+}
+
+span.reviews-cnet-text {
+    font-family: 'Akkurat';
+    color: white;
+    margin-left: 16px;
+    position: absolute;
+    /**center vertically**/
+    top: 50%;
+    /**center vertically**/
+    transform: translateY(-50%);
+    /**center vertically**/
+}
+
+div.reviews-info {
+    background: #3673cc;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+p.reviews-title {
+    font-family: 'Akkurat';
+    color: white;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+p.reviews-body {
+    font-family: 'Akkurat';
+    color: white;
+    line-height: 30px;
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+a.reviews-conditions {
+    font-family: 'Akkurat';
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 640px;
+}
+
+img.reviews-card {
+    position: absolute;
+    margin-top: 470px;
+    margin-left: 1330px;
+}
+
+
+/**
+---------Specs-------
+---------Style---------
+**/
+
+div.specs {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 85%;
+}
+
+p.specs-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+p.specs-sub-heading {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 27px;
+}
+
+div.specs-title {
+    margin-top: 70px;
+}
+
+div.specs-info {
+    font-family: 'Akkurat';
+    background: #3673cc;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+p.specs-title {
+    font-family: 'Akkurat';
+    color: white;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+p.specs-body {
+    font-family: 'Akkurat';
+    color: white;
+    line-height: 30px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+a.specs-conditions {
+    font-family: 'Akkurat';
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 610px;
+}
+
+
+/**
+---------Colours-------
+---------Style---------
+**/
+
+div.colours {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 90%;
+}
+
+p.colours-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+    margin-right: 300px;
+}
+
+p.colours-sub-heading {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 27px;
+    line-height: 27px;
+    margin-top: 40px;
+    margin-right: 260px;
+    margin-bottom: 70px;
+}
+
+div.colours-select {
+    position: relative;
+    /**center vertically**/
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+p.colours-select-name {
+    font-family: 'Gravur';
+    position: absolute;
+    /**center vertically**/
+    top: 50%;
+    /**center vertically**/
+    transform: translateY(-50%);
+    /**center vertically**/
+    margin-left: 330px;
+    color: white;
+    font-size: 70px;
+}
+
+img.colours-image-gold {
+    transform: rotate(15deg);
+    margin-top: -230px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+}
+
+img.colours-image-black {
+    margin-bottom: 100px;
+}
+
+img.colours-image-blue {
+    transform: rotate(-15deg);
+    margin-left: 70px;
+}
+
+a.colours-conditions {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    margin-top: -170px;
+}
+
+
+/**
+---------Accessories-------
+---------Style---------
+**/
+
+div.accessories {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 85%;
+}
+
+p.accessories-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+p.accessories-sub-heading {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 27px;
+}
+
+div.accessories-body-one {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+div.accessories-desc-one {
+    width: 500px;
+    padding-left: 50px;
+}
+
+div.accessories-desc-two {
+    width: 500px;
+    padding-right: 150px;
+}
+
+p.accessories-name {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+div.accessories-price {
+    background: #152582;
+    color: white;
+    width: 160px;
+    height: 85px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+p.accessories-dollar {
+    font-family: 'Akkurat';
+    font-size: 30px;
+    margin-top: -4px;
+    margin-bottom: -15px;
+}
+
+span.accessories-value {
+    font-family: 'Gravur';
+    margin-left: 17px;
+    font-size: 40px;
+}
+
+a.accessories-conditions {
+    font-family: 'Akkurat';
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 180px;
+}
+
+
+/**
+---------Extras-------
+---------Style---------
+**/
+
+div.extras {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 83%;
+}
+
+p.extras-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+p.extras-sub-heading {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 27px;
+    margin-bottom: 70px;
+}
+
+div.extras-body {
+    padding-right: 100px;
+    margin-bottom: 50px;
+}
+
+p.extras-body-title {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+p.extras-body-desc {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+div.extras-price {
+    background: #152582;
+    margin-right: 30px;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+p.extras-dollar {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 37px;
+    margin-bottom: -12px;
+}
+
+span.extras-value {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 60px;
+    margin-left: 16px;
+}
+
+span.extras-per {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 21px;
+    margin-left: 6px;
+}
+
+p.extras-term {
+    color: white;
+}
+
+div.extras-add-outer {
+    background: #152582;
+    float: left;
+    margin-top: -87px;
+    margin-left: -50px;
+    margin-bottom: 40px;
+    height: 34px;
+    padding: 4px;
+}
+
+div.extras-add-inner {
+    background: white;
+    height: 27px;
+    padding: 4px;
+}
+
+p.extras-add {
+    font-family: 'Gravur';
+    font-size: 22px;
+    color: #152582;
+}
+
+a.extras-conditions {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 320px;
+}
+
+
+/**
+---------Price-------
+---------Style---------
+**/
+
+div.price {
+    padding-top: 150px;
+    padding-left: 130px;
+    width: 80%;
+}
+
+p.price-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+p.price-sub-heading {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 27px;
+    margin-bottom: 70px;
+}
+
+div.mainContent {
+    width: 75%;
+    position: absolute;
+}
+
+div.price-body {
+    background: #3673cc;
+    margin-left: -5px;
+    height: 300px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-right: 15px;
+}
+
+p.price-body-title {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+p.price-body-sub-title {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+div.price-price {
+    background: #3673cc;
+    margin-left: -5px;
+    padding: 25px 25px 25px 25px;
+    margin-right: 15px;
+}
+
+p.price-from {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+p.price-dollar {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 40px;
+    margin-top: -10px;
+    margin-bottom: -7px;
+}
+
+span.price-value {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 80px;
+    margin-left: 25px;
+}
+
+span.price-per {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 16px;
+}
+
+p.price-minimum-cost {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button.price-button {
+    background: white;
+    border: none;
+    float: right;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+    margin-right: -25px;
+    margin-top: -55px;
+}
+
+a.price-conditions {
+    font-family: 'Akkurat';
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 700px;
+    
+}
+
+
+/***********************/
+
+div.mainContent2 {
+    position: absolute;
+    width: 85%;
+    height: 650px;
+}
+
+div.price-personal {
+    background: #3673cc;
+    margin-right: 70px;
+    height: 470px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+button.price-personal-button {
+    background: white;
+    border: none;
+    float: right;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+    margin-right: -5px;
+    margin-top: 323px;
+}
+
+div.col {
+}
+
+div.small {
+    margin-right: 15px;
+}
+
+div.medium {
+    margin-right: 15px;
+}
+
+div.large {
+    margin-right: 15px;
+}
+
+div.extra-large {
+    margin-right: 15px;
+}
+
+p.price-size {
+    font-family: 'Gravur';
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+div.cards {
+    margin-top: 20px;
+}
+
+div.cards-specs {
+    background: white;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+}
+
+i.cards-icon {
+    color: #152582;
+    float: left;
+    vertical-align: middle;
+    font-size: 23px;
+}
+
+p.cards-detail {
+    font-family: 'Akkurat';
+    font-size: 30px;
+    color: #152582;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+div.cards-price {
+    background: #152582;
+    color: white;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+p.cards-dollar {
+    font-family: 'Akkurat';
+    font-size: 40px;
+    margin-bottom: -14px;
+}
+
+span.cards-value {
+    font-family: 'Gravur';
+    font-size: 70px;
+    margin-left: 25px;
+}
+
+span.cards-per {
+    font-family: 'Akkurat';
+}
+
+p.cards-cost {
+    margin-top: 17px;
+    font-size: 16px;
+}
+
+p.cards-term {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+button.cards-button {
+    background: white;
+    border: none;
+    float: right;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+    margin-top: 60px;
+}
+
+img.cards-card {
+    margin-top: 170px;
+    margin-left: 110px;
+}
+
+div.cards-equal {
+    background: #152582;
+    height: 33px;
+    width: 36px;
+    border-radius: 5px;
+    margin-top: -173px;
+    margin-left: -15px;
+}
+
+p.cards-equal {
+    margin-top: -2px;
+    font-size: 50px;
+    color: white;
+}
+
+
+/***********************/
+
+div.mainContent3 {
+    position: absolute;
+    width: 85%;
+    height: 520px;
+}
+
+p.price-size-3 {
+    font-family: 'Gravur';
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+div.cards-3 {
+    margin-top: 20px;
+}
+
+div.cards-specs-3 {
+    background: white;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-bottom: 1px;
+    margin-right: 56px;
+}
+
+i.cards-icon-3 {
+    color: #152582;
+    float: left;
+    vertical-align: middle;
+    font-size: 23px;
+}
+
+p.cards-detail-3 {
+    font-family: 'Akkurat';
+    font-size: 30px;
+    color: #152582;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+div.cards-price-3 {
+    background: #152582;
+    color: white;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    margin-right: 56px;
+}
+
+p.cards-dollar-3 {
+    font-family: 'Akkurat';
+    font-size: 40px;
+    margin-bottom: -14px;
+}
+
+span.cards-value-3 {
+    font-family: 'Gravur';
+    font-size: 70px;
+    margin-left: 25px;
+}
+
+span.cards-per-3 {
+    font-family: 'Akkurat';
+}
+
+p.cards-cost-3 {
+    margin-top: 17px;
+    font-size: 16px;
+}
+
+p.cards-term {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+button.cards-button-3 {
+    background: white;
+    border: none;
+    float: right;
+    color: #152582;
+    height: 80px;
+    width: 80px;
+    margin-right: 56px;
+    margin-top: 73px;
+}
+
+div.cards-content {
+    margin-right: 25px;
+}
+
+p.cards-content-title {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+div.cards-content-info {
+    background: #3673cc;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    margin-bottom: 1px;
+}
+
+div.cards-content-upfront {
+    background: #3673cc;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 23px;
+    padding-right: 60px;
+    margin-bottom: 1px;
+}
+
+div.cards-content-per-month {
+    background: #3673cc;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+}
+
+p.info-desc {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+p.upfront-dollar {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 35px;
+    margin-bottom: -14px;
+}
+
+span.upfront-value {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+span.upfront-upfront {
+    font-family: 'Akkurat';
+    color: white;
+}
+
+p.per-month-dollar {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 35px;
+    margin-bottom: -14px;
+}
+
+span.per-month-value {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+span.per-month-month {
+    font-family: 'Akkurat';
+    color: white;
+}
+
+p.per-month-cost {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+p.per-month-term {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+div.cards-equal-2 {
+    background: #152582;
+    height: 30px;
+    width: 36px;
+    border-radius: 5px;
+    margin-top: -183px;
+    margin-left: -15px;
+}
+
+p.cards-equal-2 {
+    margin-top: -2px;
+    font-size: 50px;
+    color: white;
+}
+
+
+/**
+--Terms and Conditions--
+---------Style---------
+**/
+
+@media (max-width: 2160px) {
+    .active .modal-backdrop-bg {
+        opacity: .9;
+        transition: opacity 300ms ease-in-out;
+        background-color: #384199;
+    }
+}
+
+ion-modal-view.terms-and-condiitions {
+    background: #3673cc;
+    height: 1200px;
+    width: 1900px;
+    margin-top: -170px;
+    margin-left: -300px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+div.terms-and-condiitions-content {
+    margin: 80px 100px 60px 100px;
+}
+
+h1.terms-and-condiitions-heading {
+    font-family: 'Gravur';
+    color: white;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+p.terms-and-condiitions-body {
+    font-family: 'Akkurat';
+    color: white;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+button.terms-and-condiitions-close {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    margin-left: 1820px;
+    border: none;
+    background: white;
+    color: #152582;
+    margin-top: -60px;
+}

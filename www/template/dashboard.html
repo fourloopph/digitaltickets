@@ -1,0 +1,81 @@
+<ion-view class="animated {{dashboardAnim}}" style="background-color: rgba(0,0,0,0);">
+    <div class="dashboardTitle {{dashboard}}">
+        <!--Title-->
+        <p class="dashboardTitle_1 animated {{title}}">THE LATEST AND</p>
+        <p class="dashboardTitle_2 animated {{title}}">GREATEST FROM SAMSUNG</p>
+        <p class="dashboardTitle_3 animated {{title}}">Check out the great range of devices and accessories from Samsung.</p>
+        <!--Body-->
+        <ion-scroll class="dashboard-scroll" direction="x" scrollbar-x="false" has-bouncing="true">
+            <div class="row dash-swipe">
+                <div class="device dev1 animated {{toBeFade}}" ng-click="changePage('phone1_id')">
+                    <div class="{{clickAnim1}}">
+                        <div class="phoneImage">
+                            <img class="phone" src="img/one.jpg" />
+                        </div>
+                        <div class="phoneDetails">
+                            <p class="phoneName">SAMSUNG GALAXY S3</p>
+                            <p class="phoneDesc">Samsung's flagship phone.</p>
+                            <div class="phone" type="button">
+                                <span class="dollar">$</span><span class="value">80</span><span class="per">/mth</span>
+                            </div>
+                            <p class="phoneCost">Minimum Cost: $1,200</p>
+                            <p class="phoneTerm">Contract Term: 24 months</p>
+                            <button class="phoneButton" type="button"><i class="icon icon ion-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="device dev2 animated {{toBeFade}}" ng-click="changePage('phone2_id')">
+                    <div class="{{clickAnim2}}">
+                        <div class="phoneImage">
+                            <img class="phone" src="img/two.jpg" />
+                        </div>
+                        <div class="phoneDetails">
+                            <p class="phoneName">SAMSUNG GALAXY S4</p>
+                            <p class="phoneDesc">Everything you love but smaller.</p>
+                            <div class="phone" type="button">
+                                <span class="dollar">$</span><span class="value">80</span><span class="per">/mth</span>
+                            </div>
+                            <p class="phoneCost">Minimum Cost: $1,200</p>
+                            <p class="phoneTerm">Contract Term: 24 months</p>
+                            <button class="phoneButton" type="button"><i class="icon icon ion-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="device dev3 animated {{toBeFade}}" ng-click="changePage('phone3_id')">
+                    <div class="{{clickAnim3}}">
+                        <div class="phoneImage">
+                            <img class="phone" src="img/three.jpg" />
+                        </div>
+                        <div class="phoneDetails">
+                            <p class="phoneName">SAMSUNG GALAXY S5</p>
+                            <p class="phoneDesc">Everything you love but smaller.</p>
+                            <div class="phone" type="button">
+                                <span class="dollar">$</span><span class="value">80</span><span class="per">/mth</span>
+                            </div>
+                            <p class="phoneCost">Minimum Cost: $1,200</p>
+                            <p class="phoneTerm">Contract Term: 24 months</p>
+                            <button class="phoneButton" type="button"><i class="icon icon ion-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="device dev4 animated {{toBeFade}}" ng-click="changePage('phone4_id')">
+                    <div class="{{clickAnim4}}">
+                        <div class="phoneImage">
+                            <img class="phone" src="img/four.jpg" />
+                        </div>
+                        <div class="phoneDetails">
+                            <p class="phoneName">SAMSUNG GEAR</p>
+                            <p class="phoneDesc">Everything you love but smaller.</p>
+                            <div class="phone" type="button">
+                                <span class="dollar">$</span><span class="value">80</span><span class="per">/mth</span>
+                            </div>
+                            <p class="phoneCost">Minimum Cost: $1,200</p>
+                            <p class="phoneTerm">Contract Term: 24 months</p>
+                            <button class="phoneButton" type="button"><i class="icon icon ion-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ion-scroll>
+    </div>
+</ion-view>
