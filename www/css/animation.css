@@ -1,5 +1,16 @@
+/*for digital ticket*/
+
+ion-view.animated.fadeOut {
+  animation-duration: 400ms;
+}
 
 /*animation on dashboard*/
+.dashboardTitle.dashboardOpacity0 {
+  opacity: 0;
+}
+.dashboardTitle.dashboardOpacity1 {
+  opacity: 1;
+}
 .dashboardTitle_1 {
   -webkit-animation-delay:100ms;
   animation-delay:100ms;
@@ -87,25 +98,25 @@ div.speedLeft {
 div.navigation.animated.slideInDown{
   animation: slideInDown 500ms ease-in-out;
 }
-.nav1 {
+.nav1.animated.slideInDown {
   -webkit-animation-delay:200ms;
   animation-delay:200ms;
    -webkit-animation-duration:0;
    animation-duration:0;
 }
-.nav2 {
+.nav2.animated.slideInDown {
   -webkit-animation-delay:400ms;
   animation-delay:400ms;
    -webkit-animation-duration:0;
    animation-duration:0;
 }
-.nav3 {
+.nav3.animated.slideInDown {
   -webkit-animation-delay:600ms;
   animation-delay:600ms;
    -webkit-animation-duration:0;
    animation-duration:0;
 }
-.nav4 {
+.nav4.animated.slideInDown {
   -webkit-animation-delay:800ms;
   animation-delay:800ms;
    -webkit-animation-duration:0;

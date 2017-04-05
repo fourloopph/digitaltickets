@@ -38,14 +38,11 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
 })
 
 .config(function($ionicConfigProvider) {
-      $ionicConfigProvider.views.transition('none');
+    $ionicConfigProvider.views.transition('none');
 })
 
 .controller('DashController', function($rootScope, $scope, $http, $state, $timeout, $ionicSlideBoxDelegate) {
     $http.get('js/storage.json').then(function(response) {
-
-        // for dashboarad animation
-        //$rootScope.dashboardAnim = '';
 
         $scope.changePage = function(phone) { /*click event for dashboard animation*/
 
@@ -54,7 +51,12 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
                 $state.go('digitalticket', null, {
                     location: 'replace'
                 })
-            }, 1000);
+                $rootScope.dashboardOpacity = 'dashboardOpacity0';
+            }, 1200);
+
+            $timeout(function() {
+                $rootScope.speedLeft = 'speedLeft';
+            }, 400);
 
             $rootScope.landingPageAnim = 'fadeIn';
 
@@ -137,8 +139,11 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
 .controller('MainPageController', function($window, $scope, $rootScope, $http, $ionicSlideBoxDelegate, $timeout, $state, $ionicModal) {
     $http.get('js/storage.json').then(function(response) {
 
-        // back to dacsboard function on navigation
-        // $rootScope.dashboard = '';
+        $rootScope.speedLeft = '';
+
+        $timeout(function() {
+           $scope.imageFloat = 'imageFloat';
+        }, 5000);
 
         // back to dacsboard function on navigation
         $scope.backToDashboard = function() {
@@ -146,10 +151,14 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
             $timeout(function() {
                 $state.go('dashboard', null, {
                     location: 'replace'
-                })
-            }, 1000);
+                })                
+            }, 400);   
 
-            $rootScope.landingPageAnim = 'fadeOutRight';
+            $timeout(function() {
+                $rootScope.dashboardOpacity = 'dashboardOpacity1';
+            }, 600);         
+
+            $rootScope.landingPageAnim = 'fadeOut';
             // $rootScope.dashboard = 'visible';
             $rootScope.backButtonNav = 'fadeOutLeft';
             $rootScope.toBeFade = 'fadeInLeft';
@@ -163,7 +172,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
 
 
         // to animate the navigation board
-        $scope.navAnimMaster = 'slideInDown';
+        //$scope.navAnimMaster = 'slideInDown';
 
         // effects for slide pages default from ion-slide-box
         $scope.options = {
@@ -210,11 +219,11 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
 
                 $scope.showAction0 = 'true';
 
-                $scope.navAnimMaster = '';
-                $scope.navAnim1 = '';
-                $scope.navAnim2 = '';
-                $scope.navAnim3 = '';
-                $scope.navAnim4 = '';
+                //$scope.navAnimMaster = '';
+                // $scope.navAnim1 = '';
+                // $scope.navAnim2 = '';
+                // $scope.navAnim3 = '';
+                // $scope.navAnim4 = '';
 
                 $rootScope.navImage1 = response.data.navigation[0].imageWhite;
                 $rootScope.navImage2 = response.data.navigation[1].imageWhite;
@@ -608,6 +617,8 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
                     $timeout(function() {
                         $scope.holderzIndex = 0;
                     }, 1000);
+                    
+                    $scope.saveToDetailsExit = false;
 
                 }, 1100);
                 $scope.count = 0;

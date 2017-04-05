@@ -382,8 +382,24 @@ img.firstglance-back {
 
 img.firstglance-front {
     position: absolute;
-    margin-top: 40px;
+    margin-bottom: -159px;
     margin-left: 190px;
+}
+
+img.imageFloat {
+    animation: MoveUpDown 6s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 30px;
+    }
+    100% {
+        bottom: 0;
+    }
 }
 
 img.firstglance-check {
@@ -392,7 +408,6 @@ img.firstglance-check {
     margin-top: 680px;
     margin-left: 560px;
 }
-
 
 div.firstglance-card {
     position: absolute;
@@ -1177,7 +1192,6 @@ a.price-conditions {
     color: white;
     text-decoration: underline;
     margin-top: 700px;
-    
 }
 
 
@@ -1208,8 +1222,7 @@ button.price-personal-button {
     margin-top: 323px;
 }
 
-div.col {
-}
+div.col {}
 
 div.small {
     margin-right: 15px;

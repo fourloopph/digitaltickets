@@ -1,5 +1,5 @@
-<ion-view class="animated {{dashboardAnim}}" style="background-color: rgba(0,0,0,0);">
-    <div class="dashboardTitle {{dashboard}}">
+<ion-view style="background-color: rgba(0,0,0,0);">
+    <div class="dashboardTitle {{dashboardOpacity}}">
         <!--Title-->
         <p class="dashboardTitle_1 animated {{title}}">THE LATEST AND</p>
         <p class="dashboardTitle_2 animated {{title}}">GREATEST FROM SAMSUNG</p>
@@ -7,7 +7,7 @@
         <!--Body-->
         <ion-scroll class="dashboard-scroll" direction="x" scrollbar-x="false" has-bouncing="true">
             <div class="row dash-swipe">
-                <div class="device dev1 animated {{toBeFade}}" ng-click="changePage('phone1_id')">
+                <div class="{{speedLeft}} device dev1 animated {{toBeFade}}" ng-click="changePage('phone1_id')">
                     <div class="{{clickAnim1}}">
                         <div class="phoneImage">
                             <img class="phone" src="img/one.jpg" />
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="device dev2 animated {{toBeFade}}" ng-click="changePage('phone2_id')">
+                <div class="{{speedLeft}} device dev2 animated {{toBeFade}}" ng-click="changePage('phone2_id')">
                     <div class="{{clickAnim2}}">
                         <div class="phoneImage">
                             <img class="phone" src="img/two.jpg" />
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="device dev3 animated {{toBeFade}}" ng-click="changePage('phone3_id')">
+                <div class="{{speedLeft}} device dev3 animated {{toBeFade}}" ng-click="changePage('phone3_id')">
                     <div class="{{clickAnim3}}">
                         <div class="phoneImage">
                             <img class="phone" src="img/three.jpg" />
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="device dev4 animated {{toBeFade}}" ng-click="changePage('phone4_id')">
+                <div class="{{speedLeft}} device dev4 animated {{toBeFade}}" ng-click="changePage('phone4_id')">
                     <div class="{{clickAnim4}}">
                         <div class="phoneImage">
                             <img class="phone" src="img/four.jpg" />
