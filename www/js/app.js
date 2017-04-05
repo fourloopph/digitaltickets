@@ -37,6 +37,10 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
     $urlRouterProvider.otherwise('/dashboard');
 })
 
+.config(function($ionicConfigProvider) {
+      $ionicConfigProvider.views.transition('none');
+})
+
 .controller('DashController', function($rootScope, $scope, $http, $state, $timeout, $ionicSlideBoxDelegate) {
     $http.get('js/storage.json').then(function(response) {
 
@@ -50,7 +54,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
                 $state.go('digitalticket', null, {
                     location: 'replace'
                 })
-            }, 0);
+            }, 1000);
 
             $rootScope.landingPageAnim = 'fadeIn';
 
@@ -143,7 +147,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'ionic.rating', 'ui.router', 'a
                 $state.go('dashboard', null, {
                     location: 'replace'
                 })
-            }, 0);
+            }, 1000);
 
             $rootScope.landingPageAnim = 'fadeOutRight';
             // $rootScope.dashboard = 'visible';

@@ -81,9 +81,9 @@ div.speedLeft {
   }
 }
 /*animation for navigation*/
-/*.navigation-scroll {
+.navigation-scroll {
   animation: slideInDown 500ms ease-in-out;
-}*/
+}
 div.navigation.animated.slideInDown{
   animation: slideInDown 500ms ease-in-out;
 }
