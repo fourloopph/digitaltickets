@@ -1,0 +1,25 @@
+<ion-scroll class="navigation-scroll animated fadeInDown" direction="x" has-bouncing="true" scrollbar-x="false" style="width: 100%;">
+    <button class="navigation-button animated {{backButtonNav}}" ng-click="backToDashboard()"><i class="icon icon ion-chevron-left"></i></button>
+    <div class="navigation">
+        <div class="nav-phone" ng-repeat="item in device" ng-click="setClickedDevice($index, item); changeImage()">            
+            <div ng-switch="switchPoint == $index">
+                <div ng-switch-when=false>
+                    <img class="nav-phone-image" ng-src="img/content/Navigation/phones/white/{{item.subImage}}">
+                </div>
+                <div ng-switch-when=true>
+                    <img class="nav-phone-image" ng-src="img/content/Navigation/phones/colored/{{item.subImage}}">
+                </div>
+            </div>
+            <div class="nav-phone-details gearFit">
+                <p class="nav-phone-name" ng-class="{'nav-phone-name_active':$index == selectedItem}">
+                    {{item.name}}
+                </p>
+                <div class="nav-price" ng-class="{'nav-price_active':$index == selectedItem}">
+                    <span class="nav-dollar">$</span><span class="nav-value">{{item.value}}</span><span class="nav-per">/mth</span>
+                </div>
+                <p class="nav-phone-cost">Minimum Cost: $1,200</p>
+                <p class="nav-phone-term">Contract Term: 24 months</p>
+            </div>
+        </div>
+    </div>
+</ion-scroll>

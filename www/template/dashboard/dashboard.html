@@ -1,0 +1,36 @@
+<ion-view style="background-color: rgba(0,0,0,0);">
+    <div class="dashboardTitle">
+        <!--Title-->
+        <div class="title1 animated {{vm.title1}}">
+          <p class="dashboardTitle_1">THE LATEST AND</p>
+        </div>
+        <div class="title2 animated {{vm.title2}}">
+          <p class="dashboardTitle_2">GREATEST FROM SAMSUNG</p>
+        </div>
+        <div class="title3 animated {{vm.title3}}">
+          <p class="dashboardTitle_3">Check out the great range of devices and accessories from Samsung.</p>
+        </div>
+        <!--Body-->
+        <ion-scroll class="dashboard-scroll" direction="x" scrollbar-x="false" has-bouncing="true">
+            <div class="row dash-swipe">
+                <div id="device{{item.deviceId}}" class="device animated {{vm.dashDeviceAnim}}" ng-repeat = "item in vm.device" ng-click="vm.setClickedDevice($index, item)">
+                    <div ng-class="{'click':$index == vm.selectedItem}">
+                       <div class="phoneImage">
+                           <img class="phone" ng-src="{{item.image}}" />
+                       </div>
+                       <div class="phoneDetails">
+                           <p class="phoneName">{{item.name}}</p>
+                           <p class="phoneDesc">{{item.description}}</p>
+                           <div class="phone" type="button">
+                               <span class="dollar">$</span><span class="value">{{item.value}}</span><span class="per">/mth</span>
+                           </div>
+                           <p class="phoneCost">Minimum Cost: $1,200</p>
+                           <p class="phoneTerm">Contract Term: 24 months</p>
+                           <button class="phoneButton" type="button"><i class="icon icon ion-chevron-right"></i></button>
+                       </div> 
+                    </div>                                        
+                </div>
+            </div>
+        </ion-scroll>
+    </div>
+</ion-view>

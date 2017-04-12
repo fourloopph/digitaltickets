@@ -1,0 +1,42 @@
+<!-- this is the nav part -->
+<ion-view class="tab" view-title="Sliding Tabs 1" style="background: rgba(0,0,0,0);">
+    <ion-slide-box options="options" slide-tabs-scrollable="true" show-pager="false" ion-slide-tabs does-continue="false" on-slide-changed="slideChanged(index)">
+
+	<ion-slide ion-slide-tab-label="first glance">
+	    <div ng-include src="'template/firstglance/firstglance.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="battery">
+	    <div ng-include src="'template/battery/battery.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="camera">
+	    <div ng-include src="'template/camera/camera.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="reviews">
+	    <div ng-include src="'template/reviews/reviews.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="specs">
+	    <div ng-include src="'template/specs/specs.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="colours">
+	    <div ng-include src="'template/colours/colours.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="accessories">
+	    <div ng-include src="'template/accessories/accessories.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="extras">
+	    <div ng-include src="'template/extras/extras.html'"></div>
+	</ion-slide>
+	
+	<ion-slide ion-slide-tab-label="price">
+	    <div ng-include src="'template/price/price.html'"></div>
+	</ion-slide>
+
+    </ion-slide-box>      
+</ion-view>

@@ -1,16 +1,30 @@
 /* Empty. Add your own CSS if you like */
-
-
+/* digital ticket html*/
+div.shield.shieldOn {
+    background-color: rgba(255,255,255,0.2);
+    width: 2160px;
+    height: 343px;
+    z-index: 9999999999;
+    position: absolute;
+    animation:fadeIn 1500ms;
+}
+div.shield.shieldOff {
+    background-color: rgba(0,0,0,0);
+    width: 2160px;
+    height: 343px;
+    position: absolute;
+    animation:fadeOut 1500ms;
+}
 /**dashboard title**/
 
 @font-face {
     font-family: 'Gravur';
-    src: url('GravurCondensed-Regular.ttf');
+    src: url('../fonts/GravurCondensed-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Akkurat';
-    src: url('Akkurat-Normal.ttf');
+    src: url('../fonts/Akkurat-Normal.ttf');
 }
 
 div.dashboardTitle {
@@ -225,8 +239,17 @@ div.nav-price {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 12px;
+    color: black;
+    border:2px solid black;
 }
-
+div.nav-price_active {
+    background-color: #152582;
+    border-color: #152582;
+    color: white;
+}
+p.nav-phone-name_active {
+    color: #3a99e4;
+}
 span.nav-dollar {
     font-family: 'Akkurat';
     position: absolute;

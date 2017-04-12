@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Gravur';
-    src: url('GravurCondensed-Regular.ttf');
+    src: url('../fonts/GravurCondensed-Regular.ttf');
 }
 
 /*style section*/
@@ -238,8 +238,8 @@ div.buttonClose.animated.zoomIn {
 	animation-timing-function: ease-in-out;
 }
 div.buttonClose {
-	width: 120px;
-	height: 120px;
+	width: 118px;
+	height: 118px;
 	position: absolute;
 	top: 380px;
 	left: 1380px;
@@ -252,7 +252,6 @@ div.buttonClose.animated.zoomIn {
 	animation-duration: 200ms;
 	animation-timing-function: ease-in-out;
 }
-
 /*for keyframes to be used*/
 @keyframes zoomInAnim {
   0%   { transform: scale(0.0); }
