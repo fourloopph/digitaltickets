@@ -706,6 +706,7 @@ div.reviews {
     padding-top: 150px;
     padding-left: 130px;
     width: 85%;
+    position: absolute;
 }
 
 p.reviews-heading {
@@ -765,12 +766,14 @@ a.reviews-conditions {
     text-decoration: underline;
     position: absolute;
     margin-top: 640px;
+    z-index: 99999999;
 }
 
 img.reviews-card {
     position: absolute;
     margin-top: 470px;
     margin-left: 1330px;
+    z-index: 9999999;
 }
 
 
@@ -1105,13 +1108,11 @@ a.extras-conditions {
 ---------Price-------
 ---------Style---------
 **/
-
 div.price {
     padding-top: 150px;
     padding-left: 130px;
     width: 80%;
 }
-
 p.price-heading {
     font-family: 'Gravur';
     color: white;
@@ -1245,8 +1246,6 @@ button.price-personal-button {
     margin-top: 323px;
 }
 
-div.col {}
-
 div.small {
     margin-right: 15px;
 }
@@ -1360,7 +1359,6 @@ p.cards-equal {
     font-size: 50px;
     color: white;
 }
-
 
 /***********************/
 

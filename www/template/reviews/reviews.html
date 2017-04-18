@@ -21,6 +21,44 @@
         	</div>
         </div>
         <a class="reviews-conditions" ng-click="openModal()">Terms and conditions</a>
-        <img class="reviews-card" src="img/content/Shared/card2.png">
+        <img ng-click="showCard(); startProgressBar()" class="reviews-card buttonMain {{buttonMainAnim}} animated {{buttonMainEnter}}" src="img/content/Shared/card2.png">
     </div>
+</div>
+<!-- markup for the progress bar -->
+<div class="holder" style="z-index: {{holderzIndex}};">
+    <center>
+         <div class="cardSwipeWrapper animated {{cardSwipeWrapper}}" ng-show="showCardSwipeWrapper">
+            <div class="progressBarGroup">
+                <div class="contentWrapper">
+                    <div class="littleBadge animated {{badgeAnim}}" ng-show="showBadge"></div>
+                    <div class="saveDetailsWrapper animated {{saveDetailsWrapperExit}}" ng-hide="saveToDetailsExit">                
+                        <div class="saveDetails {{saveDetailsAnim}}"></div>
+                    </div>
+                    <div class="saveToCardWrapper">             
+                        <div class="saveToCard animated {{saveToCardAnim}}"></div>
+                    </div>
+                    <div class="mainSectionWrapper {{mainSectionWrapperAnim}}" ng-show="showMainSection">
+                        <img class="cardSwipeGif animated {{cardSwipeGifAnim}}" src="img/gif/swipe_card.gif" ng-show="showCardSwipeGif" />
+                        <div class="centerButtonWrapper animated {{centerButtonWrapperAnim}}">          
+                            <img class="centerButton {{centerButtonAnim}}" src="img/card/button.png"/>                    
+                        </div>
+                        <p class="p1 animated {{pAnim}}">{{deviceName}}</p>
+                        <p class="p3 animated {{pAnim2}}" ng-show="showp2">PERSONAL S</p>
+                        <p class="p4 animated {{pAnim2}}" ng-show="showp2">EVERYDAY</p>
+                        <p class="p4 animated {{pAnim2}}" ng-show="showp2">CONNECT PLAN</p>
+                        <div class="checkButton animated {{checkAnim}}" ng-show="showCheck"></div>      
+                    </div>
+                    <div class="buttonClose animated {{buttonCloseAnim}}" ng-click="stopProgressBar()"></div>
+                </div>
+                <!-- progress bar -->
+                <div class="progressBarWrapper">
+                   <div class="barWrapper" ng-show="showBar">
+                       <div ang:round:progress data-round-progress-model="roundProgressData"></div>
+                   </div>      
+                   <div class="barInnerBorder" ng-show="true" ng-show="showBar"></div>
+                   <div class="barBorder" ng-show="showBar"></div>
+                </div>
+            </div>            
+         </div>
+    </center>
 </div>
